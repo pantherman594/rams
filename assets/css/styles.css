@@ -123,6 +123,11 @@ body {
   color: black;
 }
 
+.alert {
+  border-color: red;
+  background-color: #ffeeee;
+}
+
 .card:hover {
   background-color: #fff;
 }

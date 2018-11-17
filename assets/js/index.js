@@ -73,8 +73,8 @@ $('.student-profile').each((i, elem) => {
 
   switch(i) {
     case 0:
-      tempRisk = 0.45;
-      longRisk = 0.23;
+      tempRisk = 0.85;
+      longRisk = 0.63;
       break;
     case 1:
       tempRisk = 0.35;
@@ -93,6 +93,10 @@ $('.student-profile').each((i, elem) => {
   } else {
     animateRisk(elem, 10, 'red', longRisk);
     animateRisk(elem, 10, 'orange', tempRisk);
+  }
+
+  if (tempRisk > 0.75 || longRisk > 0.75) {
+    $(elem).parent().addClass("alert");
   }
 });
 

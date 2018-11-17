@@ -8,21 +8,21 @@ switch(id) {
 		child = {
 			name: 'James',
       img: 'kid1.jpg',
-			tempRisk: 0.45,
-			longRisk: 0.23,
+			tempRisk: 0.85,
+			longRisk: 0.63,
 			// 0: present, 1: tardy, 2: excused, 3: unexcused
 			attendance: [
 				0, 0, 3, 0, 0, 1, 3, 3, 0, 0, 1, 1, 2, 0, 0, 3, 0, 0, 2, 0, 1, 0, 0, 0,
-				0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+				0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 2, 1, 0, 3, 1, 0, 3, 0, 0, 3, 3, 3, 1, 3,
 			],
 			ymca: [
 				0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1,
-				0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 1,
+				0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1,
       ],
       grades: {
         Math: 87.3,
-        English: 82.1,
-        'Earth Science': 72.5,
+        English: 62.1,
+        'Earth Science': 42.5,
         Art: 92.4,
       },
 		};
@@ -77,6 +77,9 @@ loginState = updateLoginState();
 
 $('.student-profile img').attr('src', '../assets/img/' + child.img);
 $(`.c-${loginState.role}`).css('display', 'inherit');
+if (Math.max(child.tempRisk, child.longRisk) > 0.75 && loginState.role === 'parent') {
+  $('.alert').show();
+}
 
 if (cookies.perms === undefined) {
   setCookie('perms', 'attendance-school,attendance-organization,attendance-boysgirls,' + 
@@ -117,7 +120,7 @@ function updateNav() {
           '<a href="/permissions/" id="nav-permissions">Permissions</a>' +
           '</div>');
         $('.parent').css('display', 'inherit');
-        $('.perm').show();
+        $('.perm:not(.alert)').show();
         break;
       case 'school':
         $('.school').css('display', 'inherit');
