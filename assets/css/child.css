@@ -1,0 +1,30 @@
+#content {
+  margin: 100px auto;
+  max-width: 800px;
+  width: 80%;
+  margin-top: 300px;
+}
+
+.perm {
+  display: none;
+}
+
+.wrapper {
+  top: 250px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chart div {
+  background-color: #008cff;
+  color: white;
+  text-align: right;
+  margin: 3px;
+  padding: 3px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 19px;
+}

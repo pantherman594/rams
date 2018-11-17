@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | RAMS</title>
+</head>
+
+<body>
+  <div id="nav">
+    <div class="nav-left">
+      <div class="item">
+        <a href="/" id="nav-home">Home</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="item">
+        <a href="#" id="nav-user" style="display: none"></a>
+        <a href="#" id="nav-auth">Guest</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="loggedin parent">
+      <h1>Children</h1>
+      <div class="grid">
+        <a href="/child/?id=14235">
+          <div class="card">
+            <div class="student-profile">
+              <img src="assets/img/kid1.jpg" />
+            </div>
+            <div class="student-name">
+              James
+            </div>
+          </div>
+        </a>
+        <a href="/child/?id=31262">
+          <div class="card">
+            <div class="student-profile">
+              <img src="assets/img/kid2.jpg" />
+            </div>
+            <div class="student-name">
+              Jenny
+            </div>
+          </div>
+        </a>
+        <a href="/child/?id=29948">
+          <div class="card">
+            <div class="student-profile">
+              <img src="assets/img/kid3.jpg" />
+            </div>
+            <div class="student-name">
+              Joe
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="loggedin school organization">
+      <h1>Students</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Short-Term Risk</th>
+          <th>Long-Term Risk</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">John</a>
+          </td>
+          <td>49%</td>
+          <td>73%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Melinda</a>
+          </td>
+          <td>48%</td>
+          <td>68%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=31262">Jenny</a>
+          </td>
+          <td>35%</td>
+          <td>41%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Charles</a>
+          </td>
+          <td>56%</td>
+          <td>37%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Gina</a>
+          </td>
+          <td>45%</td>
+          <td>36%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Joe</a>
+          </td>
+          <td>15%</td>
+          <td>31%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=14235">James</a>
+          </td>
+          <td>45%</td>
+          <td>23%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Daren</a>
+          </td>
+          <td>20%</td>
+          <td>23%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Eddie</a>
+          </td>
+          <td>80%</td>
+          <td>13%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Nancy</a>
+          </td>
+          <td>2%</td>
+          <td>12%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Lisa</a>
+          </td>
+          <td>61%</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/child/?id=29948">Bryan</a>
+          </td>
+          <td>15%</td>
+          <td>9%</td>
+        </tr>
+      </table>
+    </div>
+    <div class="loggedin organization">
+    </div>
+    <div class="login">
+      <div class="login-form">
+        <h1>Login</h1>
+        <input id="login-email" name="email" placeholder="email" />
+        <input id="login-password" name="password" type="password" placeholder="password" />
+        <div id="login-error"></div>
+        <div id="login-button">Login</div>
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/loginState.js" type="text/javascript"></script>
+  <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>

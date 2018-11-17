@@ -1,0 +1,160 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 94%;
+  padding: 20px 3%;
+  background-color: black;
+  z-index: 1000;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px;
+  transition: 0.1s;
+}
+
+#nav a:hover, #nav a.active {
+  color: black;
+  background-color: white;
+}
+
+.nav-left, .nav-right {
+  display: inline-block;
+}
+
+.nav-right {
+  float: right;
+}
+
+.item {
+  display: inline-block;
+}
+
+#content {
+  margin: 100px auto;
+}
+
+.parent, .school, .organization, .admin {
+  display: none;
+}
+
+.login-form {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 20px;
+}
+
+.login-form h1 {
+  margin-left: 20px;
+}
+
+.login-form input {
+  display: block;
+  font-size: 30px;
+  border-radius: 50px;
+  border: 1px solid #777;
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+.login-form #login-button {
+  display: block;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  width: 20%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.login-form #login-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#login-error {
+  color: red;
+  margin: 6px 24px;
+  margin-bottom: -15px;
+}
+
+.loggedin {
+  display: none;
+}
+
+.school, .organization {
+  max-width: 800px;
+  width: 80%;
+  margin: auto;
+}
+
+.parent {
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  background-color: #eee;
+  transition: 0.2s;
+  cursor: pointer;
+  color: black;
+}
+
+.card:hover {
+  background-color: #fff;
+}
+
+.student-profile img {
+  position: absolute;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+.student-name {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+
+.risk-border {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+
+  height: 220px;
+  width: 220px;
+  margin: auto;
+  z-index: 1;
+}
