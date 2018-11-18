@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="diagram.svg">
+   sodipodi:docname="diagram.svg"
+   inkscape:export-filename="/home/pantherman594/diagram.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
+     inkscape:zoom="0.7"
      inkscape:cx="841.24299"
-     inkscape:cy="641.1562"
+     inkscape:cy="560.344"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -184,23 +187,6 @@
        id="rect1097"
        style="fill:#c7c31d;fill-opacity:0.51764706;stroke:none;stroke-width:0.72547072;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       y="188.38065"
-       x="353.69635"
-       height="19.82333"
-       width="31.089952"
-       id="rect996"
-       style="fill:#727272;fill-opacity:0.51764706;stroke:none;stroke-width:0.40806597;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.27838612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 353.69635,188.38064 H 384.7863"
-       id="path1004"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path1006"
-       d="M 353.69635,208.20397 H 384.7863"
-       style="fill:none;stroke:#000000;stroke-width:1.27838612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
        style="fill:#727272;fill-opacity:0.51764706;stroke:none;stroke-width:0.40806597;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1019"
        width="31.089952"
@@ -240,7 +226,7 @@
        transform="matrix(0.26458333,0,0,0.26458333,0,11.249983)"
        id="path1057" />
     <path
-       style="fill:#a4d25b;fill-opacity:0.71764706;stroke:none;stroke-width:2.33003163;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#bedf89;fill-opacity:1;stroke:none;stroke-width:2.33003163;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 1296.8047 621.03906 L 1296.8047 792.82422 L 1346.1133 723.26367 L 1627.084 723.26367 L 1627.084 690.59961 L 1346.1133 690.59961 L 1296.8047 621.03906 z "
        transform="matrix(0.26458333,0,0,0.26458333,0,11.249983)"
        id="path1059" />
